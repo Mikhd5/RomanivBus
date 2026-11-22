@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07111d">
+  <meta name="description" content="RomanivBus — пасажирські перевезення між Україною, Польщею, Німеччиною, Нідерландами та Бельгією. Бронювання без передоплати, доставка передач та посилок.">
+  <title>RomanivBus — пасажирські перевезення Європою</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#07111d;--bg2:#0b1725;--panel:#101d2b;--panel2:#142334;--line:rgba(255,255,255,.11);--muted:#a6b2bf;--text:#f5f7f9;--yellow:#f5bd22;--yellow2:#ffd35c;--max:1180px;--r:22px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:92px}body{margin:0;background:var(--bg);color:var(--text);font-family:Manrope,Arial,sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button,a{ -webkit-tap-highlight-color:transparent}.wrap{width:min(var(--max),calc(100% - 48px));margin-inline:auto}.section{padding:100px 0}.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--yellow2);font-size:12px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}.eyebrow:before{content:"";width:26px;height:1px;background:var(--yellow)}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(42px,5.4vw,72px);line-height:1.02;letter-spacing:-.055em;font-weight:800;margin:24px 0 22px}h2{font-size:clamp(32px,4vw,48px);line-height:1.08;letter-spacing:-.04em;margin:16px 0}h3{font-size:18px;line-height:1.25;margin:0 0 9px;letter-spacing:-.02em}.lead{max-width:570px;color:#c2ccd6;font-size:18px;line-height:1.7}.muted{color:var(--muted)}.yellow{color:var(--yellow)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:54px;padding:0 23px;border-radius:999px;border:1px solid transparent;background:var(--yellow);color:#101722;font-weight:800;transition:transform .2s,background .2s,box-shadow .2s;cursor:pointer}.btn:hover{transform:translateY(-2px);background:var(--yellow2);box-shadow:0 12px 30px rgba(245,189,34,.18)}.btn-ghost{background:transparent;border-color:rgba(255,255,255,.25);color:var(--text)}.btn-ghost:hover{background:rgba(255,255,255,.06);box-shadow:none}.btn svg{width:18px;height:18px}.icon{width:24px;height:24px;stroke:var(--yellow);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+    .reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}.reveal.is-visible{opacity:1;transform:none}.to-top{position:fixed;right:22px;bottom:22px;z-index:30;width:46px;height:46px;border:1px solid rgba(245,189,34,.4);border-radius:50%;background:#f5bd22;color:#101722;font-size:20px;font-weight:900;box-shadow:0 8px 24px rgba(0,0,0,.25);cursor:pointer;opacity:0;pointer-events:none;transform:translateY(8px);transition:.25s}.to-top.show{opacity:1;pointer-events:auto;transform:none}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+    /* header */
+    .header{position:sticky;top:0;z-index:20;background:rgba(7,17,29,.91);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:10px;font-size:27px;font-weight:800;letter-spacing:-1.5px;white-space:nowrap}.brand-mark{width:35px;height:35px;border:2px solid var(--yellow);border-radius:50%;display:grid;place-items:center;color:var(--yellow);font-size:13px;font-weight:800;letter-spacing:-1px}.brand span:last-child{color:var(--yellow)}.brand small{display:block;margin-top:-5px;color:#b4c0cc;font-size:8px;letter-spacing:1.55px;font-weight:700}.nav-links{display:flex;align-items:center;gap:30px;color:#d0d8e0;font-size:13px;font-weight:700}.nav-links a{transition:color .2s}.nav-links a:hover{color:var(--yellow)}.nav-actions{display:flex;align-items:center;gap:10px}.nav-phone{font-size:12px;color:#dce4ed;font-weight:700;white-space:nowrap}.menu-toggle{display:none;background:none;color:white;border:0;font-size:26px;cursor:pointer}
+    /* hero */
+    .hero{position:relative;overflow:hidden;min-height:660px;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 68% 28%,#17314a 0%,#0c1a2a 42%,#07111d 78%)}.hero-grid{min-height:660px;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:36px;padding-top:48px;padding-bottom:62px;position:relative}.hero-copy{position:relative;z-index:2;padding:34px 0 48px}.hero h1{max-width:670px}.hero h1 em{font-style:normal;color:var(--yellow)}.hero .lead{max-width:540px}.route-line{display:flex;flex-wrap:wrap;gap:9px;margin:26px 0 32px;color:#dce4ed;font-size:13px;font-weight:700}.route-line span{border:1px solid var(--line);padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.035)}.hero-buttons{display:flex;gap:12px;flex-wrap:wrap}.hero-notes{display:flex;gap:22px;flex-wrap:wrap;margin-top:28px;color:#b9c5d0;font-size:12px}.hero-notes span{display:flex;align-items:center;gap:8px}.tick{color:var(--yellow);font-weight:900}.hero-visual{position:relative;min-height:500px;display:flex;align-items:center;justify-content:center}.hero-visual:before{content:"";position:absolute;width:95%;height:70%;right:0;bottom:6%;border-radius:50%;background:rgba(54,102,143,.17);filter:blur(50px)}.hero-van{position:relative;z-index:1;width:100%;max-width:680px;height:470px;object-fit:cover;object-position:center;border-radius:28px;filter:saturate(.9) contrast(1.06);box-shadow:0 35px 70px rgba(0,0,0,.38);mask-image:linear-gradient(90deg,transparent 0%,#000 7%,#000 96%,transparent 100%);-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 7%,#000 96%,transparent 100%)}.photo-note{position:absolute;bottom:4px;right:18px;z-index:2;color:rgba(229,237,245,.65);font-size:10px}.hero-bottom{border-top:1px solid var(--line);background:rgba(3,10,17,.36)}.hero-bottom-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}.hero-stat{display:flex;align-items:center;gap:13px;padding:20px 22px;border-right:1px solid var(--line)}.hero-stat:first-child{padding-left:0}.hero-stat:last-child{border:0}.hero-stat strong{display:block;font-size:13px}.hero-stat small{display:block;color:var(--muted);font-size:11px;margin-top:2px}
+    /* routes */
+    .routes{background:linear-gradient(180deg,#0a1623,#08121e)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:42px}.section-head .lead{font-size:15px;max-width:440px;margin:0}.route-layout{display:grid;grid-template-columns:.82fr 1.18fr;gap:22px}.schedule-panel{background:#101d2b;border:1px solid var(--line);border-radius:var(--r);padding:30px}.schedule-row{display:grid;grid-template-columns:54px 1fr;gap:16px;align-items:center;padding:20px 0;border-bottom:1px solid var(--line)}.schedule-row:last-child{border:0;padding-bottom:4px}.flag{font-size:30px;width:50px;height:50px;border-radius:16px;background:rgba(255,255,255,.06);display:grid;place-items:center}.schedule-row b{font-size:15px;display:block}.schedule-row small{color:var(--muted);font-size:12px}.day{color:var(--yellow);font-size:13px;font-weight:800;margin-top:3px}.countries{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.country{min-height:170px;border:1px solid var(--line);border-radius:var(--r);background-color:#15283a;background-size:cover;background-position:center;padding:22px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .25s,border-color .25s;position:relative;isolation:isolate;overflow:hidden}.country:before{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(4,12,20,.12),rgba(4,12,20,.86))}.country>*{position:relative;z-index:1}.country--pl{background-image:url("assets/poland-4k.webp")}.country--de{background-image:url("assets/germany-4k.webp")}.country--nl{background-image:url("assets/netherlands-4k.webp")}.country--be{background-image:url("assets/belgium-4k.webp")}.country:hover{transform:translateY(-3px);border-color:rgba(245,189,34,.55)}.country-top{display:flex;align-items:center;justify-content:space-between}.country .flag{width:42px;height:42px;font-size:25px}.country small{color:var(--muted);font-size:11px}.country b{font-size:18px}.route-note{margin-top:22px;color:#8f9eae;font-size:11px}
+    /* advantages */
+    .advantages{background:#0a1522}.adv-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:58px;align-items:center}.interior-wrap{position:relative}.interior{width:100%;height:500px;object-fit:cover;border-radius:26px;display:block;filter:saturate(.75)}.interior-caption{position:absolute;left:20px;bottom:20px;background:rgba(7,17,29,.87);border:1px solid var(--line);border-radius:14px;padding:12px 16px;font-size:11px;color:#c7d0da}.adv-content .lead{font-size:15px}.adv-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:30px}.adv-card{padding:18px;border:1px solid var(--line);border-radius:17px;background:rgba(255,255,255,.025);min-height:128px}.adv-card .icon{margin-bottom:13px;width:23px;height:23px}.adv-card strong{display:block;font-size:13px;margin-bottom:5px}.adv-card p{font-size:11px;color:var(--muted);margin:0;line-height:1.5}
+    /* parcels */
+    .parcels{padding:0 0 100px;background:#0a1522}.parcel-band{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center;padding:42px 38px;border:1px solid rgba(245,189,34,.28);border-radius:24px;background:linear-gradient(90deg,rgba(7,17,29,.96),rgba(7,17,29,.78) 55%,rgba(7,17,29,.38)),url("assets/parcels-4k.webp") center 54%/cover;position:relative;overflow:hidden}.parcel-band:after{content:"";position:absolute;width:230px;height:230px;right:18%;top:-140px;border-radius:50%;background:rgba(245,189,34,.08);filter:blur(20px)}.parcel-copy{position:relative;z-index:1}.parcel-copy p{margin:7px 0 0;color:#adb9c5;font-size:14px}.parcel-badge{display:inline-flex;align-items:center;gap:8px;color:var(--yellow);font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;margin-bottom:10px}
+    /* booking */
+    .booking{background:linear-gradient(180deg,rgba(8,18,30,.97),rgba(12,27,42,.96)),url("assets/booking-4k.webp") center/cover fixed;padding:100px 0}.booking-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:55px;align-items:start}.booking-intro{position:sticky;top:115px}.steps{margin-top:34px;display:grid;gap:18px}.step{display:grid;grid-template-columns:42px 1fr;gap:13px;align-items:start}.step-no{width:38px;height:38px;border-radius:50%;background:rgba(245,189,34,.12);border:1px solid rgba(245,189,34,.3);color:var(--yellow);display:grid;place-items:center;font-size:13px;font-weight:800}.step b{font-size:13px;display:block}.step small{color:var(--muted);font-size:11px}.form-card{background:#122235;border:1px solid rgba(255,255,255,.14);border-radius:25px;padding:32px;box-shadow:0 25px 65px rgba(0,0,0,.18)}.form-head{margin-bottom:24px}.form-head h3{font-size:25px;margin-bottom:6px}.form-head p{font-size:12px;color:var(--muted);margin:0}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:11px;color:#d6dfe8;font-weight:700}.field input,.field select,.field textarea{width:100%;height:48px;border:1px solid rgba(255,255,255,.15);border-radius:11px;background:#0c1928;color:#f4f7fa;padding:0 13px;outline:none}.field textarea{height:86px;padding:12px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--yellow)}.field select{color-scheme:dark}.form-foot{margin-top:18px;display:flex;align-items:center;justify-content:space-between;gap:18px}.form-foot small{max-width:230px;color:var(--muted);font-size:10px;line-height:1.4}.form-foot .btn{min-width:210px}.form-status{margin-top:12px;color:var(--yellow2);font-size:12px;min-height:18px}
+    /* contacts */
+    .contacts{background:#07111d;padding:82px 0 44px;border-top:1px solid var(--line)}.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px}.contact-list{display:grid;gap:12px;margin-top:25px}.contact-card{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:17px 19px;background:#0e1b29;border:1px solid var(--line);border-radius:15px}.contact-card b{display:block;font-size:14px}.contact-card small{display:block;color:var(--muted);font-size:11px;margin-top:2px}.contact-number{font-size:14px;font-weight:800;white-space:nowrap}.contact-number:hover{color:var(--yellow)}.footer-bottom{border-top:1px solid var(--line);margin-top:62px;padding-top:22px;display:flex;justify-content:space-between;gap:20px;color:#7f8c9a;font-size:10px}.footer-bottom a{color:#bac6d1}.footer-social{display:flex;gap:14px;flex-wrap:wrap}
+    @media(max-width:980px){.nav-links{gap:16px}.nav-phone{display:none}.hero-grid{grid-template-columns:1fr .85fr;gap:10px}.hero-visual{min-height:420px}.hero-van{height:390px}.hero-stat{padding:17px 12px}.hero-stat strong{font-size:11px}.hero-stat small{font-size:10px}.adv-grid{gap:30px}.interior{height:440px}.booking-grid{gap:30px}}
+    @media(max-width:760px){.wrap{width:min(100% - 34px,var(--max))}.section{padding:72px 0}.nav{height:70px}.brand{font-size:23px}.nav-actions .btn{display:none}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:70px;left:0;right:0;background:#091523;border-bottom:1px solid var(--line);padding:16px 22px 22px;flex-direction:column;align-items:stretch;gap:0}.nav-links.open{display:flex}.nav-links a{padding:13px 0;border-bottom:1px solid var(--line)}.hero-grid{display:flex;flex-direction:column;align-items:stretch;gap:0;min-height:unset;padding:48px 0 28px}.hero-copy{padding:0}.hero h1{font-size:clamp(40px,10vw,58px);margin:18px 0}.hero .lead{font-size:15px}.route-line{gap:6px;margin:20px 0 24px}.route-line span{font-size:10px;padding:6px 9px}.hero-visual{min-height:290px;margin-top:18px}.hero-van{height:300px;max-width:100%;border-radius:20px;mask-image:linear-gradient(180deg,#000 0%,#000 80%,transparent 100%);-webkit-mask-image:linear-gradient(180deg,#000 0%,#000 80%,transparent 100%)}.photo-note{right:8px;bottom:0;font-size:9px}.hero-bottom-grid{grid-template-columns:1fr 1fr}.hero-stat{padding:14px 10px;border-bottom:1px solid var(--line)}.hero-stat:nth-child(2){border-right:0}.hero-stat:nth-child(3),.hero-stat:nth-child(4){border-bottom:0}.hero-stat:first-child{padding-left:10px}.section-head{display:block;margin-bottom:28px}.section-head .lead{margin-top:12px}.route-layout,.adv-grid,.booking-grid,.contact-grid{grid-template-columns:1fr}.schedule-panel{padding:22px}.countries{grid-template-columns:1fr 1fr}.country{min-height:128px;padding:17px}.country b{font-size:15px}.adv-grid{gap:28px}.interior{height:330px}.adv-cards{gap:9px}.adv-card{padding:14px;min-height:124px}.adv-card strong{font-size:12px}.adv-card p{font-size:10px}.parcels{padding-bottom:72px}.parcel-band{grid-template-columns:1fr;padding:26px 22px}.parcel-band .btn{width:100%}.booking{padding:72px 0}.booking-intro{position:static}.steps{gap:14px;margin-top:25px}.form-card{padding:22px 17px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.form-foot{align-items:stretch;flex-direction:column}.form-foot .btn{width:100%}.form-foot small{max-width:100%}.contact-grid{gap:28px}.contact-card{align-items:flex-start;flex-direction:column}.contact-number{font-size:15px}.footer-bottom{margin-top:38px;flex-direction:column}.hero-buttons .btn{flex:1}.hero-buttons{width:100%}}
+    @media(max-width:390px){.hero-buttons{flex-direction:column}.hero-buttons .btn{width:100%}.countries{grid-template-columns:1fr}.hero-stat{gap:8px}.hero-stat .icon{width:20px;height:20px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="RomanivBus — на головну"><span class="brand-mark">RB</span><span>Romaniv<span>Bus</span><small>ПАСАЖИРСЬКІ ПЕРЕВЕЗЕННЯ</small></span></a>
+      <nav class="nav-links" id="navLinks" aria-label="Головна навігація">
+        <a href="#home">Головна</a><a href="#routes">Маршрути</a><a href="#advantages">Переваги</a><a href="#parcels">Посилки</a><a href="#booking">Бронювання</a><a href="#contacts">Контакти</a>
+      </nav>
+      <div class="nav-actions"><a class="nav-phone" href="tel:+380673363931">+380 67 336 39 31</a><a class="btn" href="#booking">Забронювати <span aria-hidden="true">↗</span></a><button class="menu-toggle" id="menuToggle" aria-label="Відкрити меню" aria-expanded="false">☰</button></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Пасажирські перевезення Європою</div>
+          <h1>Подорожуйте Європою <em>з комфортом.</em></h1>
+          <p class="lead">Перевезення між Україною та країнами Європи. Доставка від адреси до адреси, індивідуальні поїздки та передача посилок.</p>
+          <div class="route-line" aria-label="Країни маршрутів"><span>🇺🇦 Україна</span><span>🇵🇱 Польща</span><span>🇩🇪 Німеччина</span><span>🇳🇱 Нідерланди</span><span>🇧🇪 Бельгія</span></div>
+          <div class="hero-buttons"><a class="btn" href="#booking">Залишити заявку <span aria-hidden="true">→</span></a><a class="btn btn-ghost" href="#routes">Переглянути маршрути</a></div>
+          <div class="hero-notes"><span><b class="tick">✓</b> Бронювання без передоплати</span><span><b class="tick">✓</b> Можна з домашніми улюбленцями</span></div>
+        </div>
+        <div class="hero-visual">
+          <img class="hero-van" src="assets/hero-4k.webp" srcset="assets/hero-4k.webp 3840w" sizes="(max-width:760px) 100vw, 50vw" alt="Чорний мікроавтобус RomanivBus на європейській набережній" fetchpriority="high" decoding="async" width="3840" height="2160">
+          <div class="photo-note">Візуалізація концепту · очікуємо реальні фото автопарку</div>
+        </div>
+      </div>
+      <div class="hero-bottom"><div class="wrap hero-bottom-grid">
+        <div class="hero-stat"><svg class="icon" viewBox="0 0 24 24"><path d="M5 18h14M7 18V6h10v12M9 10h6M3 9l2-3h14l2 3v7H3z"/><circle cx="7" cy="18" r="1.5"/><circle cx="17" cy="18" r="1.5"/></svg><div><strong>Комфортні буси</strong><small>Для міжнародних поїздок</small></div></div>
+        <div class="hero-stat"><svg class="icon" viewBox="0 0 24 24"><path d="M3 11 12 3l9 8M5 10v10h14V10M9 20v-6h6v6"/></svg><div><strong>Від адреси до адреси</strong><small>Зручна посадка та прибуття</small></div></div>
+        <div class="hero-stat"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/></svg><div><strong>Щотижневі виїзди</strong><small>За графіком перевізника</small></div></div>
+        <div class="hero-stat"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3 20 6v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="m8 12 2.5 2.5L16 9"/></svg><div><strong>Без передоплати</strong><small>Безкоштовне бронювання</small></div></div>
+      </div></div>
+    </section>
+
+    <section class="section routes reveal" id="routes">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">Плануйте свою поїздку</div><h2>Маршрути та <span class="yellow">графік виїздів</span></h2></div><p class="lead">Основні напрямки RomanivBus — Україна та країни Європи. Деталі маршруту й можливість посадки уточнюйте під час бронювання.</p></div>
+        <div class="route-layout">
+          <div class="schedule-panel"><div class="eyebrow">Графік з рекламних матеріалів</div>
+            <div class="schedule-row"><div class="flag">🇺🇦</div><div><b>Виїзд з України</b><small>У напрямку країн Європи</small><div class="day">Понеділок · щотижня</div></div></div>
+            <div class="schedule-row"><div class="flag">🇪🇺</div><div><b>Виїзд з Німеччини</b><small>У напрямку України</small><div class="day">Середа · щотижня</div></div></div>
+            <p class="route-note">Дні виїзду перед публікацією потрібно підтвердити у перевізника. Наявність місць та точну дату уточнює менеджер.</p>
+          </div>
+          <div class="countries" aria-label="Країни напрямків">
+            <a class="country country--pl" data-country="Польща" href="#booking"><div class="country-top"><span class="flag">🇵🇱</span><small>01 / напрямок</small></div><b>Польща</b></a>
+            <a class="country country--de" data-country="Німеччина" href="#booking"><div class="country-top"><span class="flag">🇩🇪</span><small>02 / напрямок</small></div><b>Німеччина</b></a>
+            <a class="country country--nl" data-country="Нідерланди" href="#booking"><div class="country-top"><span class="flag">🇳🇱</span><small>03 / напрямок</small></div><b>Нідерланди</b></a>
+            <a class="country country--be" data-country="Бельгія" href="#booking"><div class="country-top"><span class="flag">🇧🇪</span><small>04 / напрямок</small></div><b>Бельгія</b></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section advantages reveal" id="advantages">
+      <div class="wrap adv-grid">
+        <div class="interior-wrap">
+          <img class="interior" src="assets/interior-4k.webp" srcset="assets/interior-4k.webp 3840w" sizes="(max-width:760px) 100vw, 45vw" alt="Комфортний салон пасажирського мікроавтобуса" loading="lazy" decoding="async" width="3840" height="2160">
+          <div class="interior-caption">Візуалізація салону · фото конкретного авто уточнюється</div>
+        </div>
+        <div class="adv-content">
+          <div class="eyebrow">Чому обирають нас</div><h2>Комфорт і турбота <span class="yellow">у кожній поїздці</span></h2>
+          <p class="lead">Продумали важливі деталі, щоб дорога між країнами була зручнішою для пасажирів та їхніх близьких.</p>
+          <div class="adv-cards">
+            <article class="adv-card"><svg class="icon" viewBox="0 0 24 24"><path d="M5 18h14M7 18V5h8a3 3 0 0 1 3 3v10M7 10h11M7 18v3M18 18v3"/></svg><strong>Комфортні мікроавтобуси</strong><p>Поїздки на пасажирських мікроавтобусах.</p></article>
+            <article class="adv-card"><svg class="icon" viewBox="0 0 24 24"><path d="m3 11 9-8 9 8M5 10v10h14V10M9 20v-6h6v6"/></svg><strong>Адресна доставка</strong><p>Забираємо та доставляємо від адреси до адреси.</p></article>
+            <article class="adv-card"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/></svg><strong>Регулярні виїзди</strong><p>Плануйте поїздку за графіком перевізника.</p></article>
+            <article class="adv-card"><svg class="icon" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20v-1a6 6 0 0 1 12 0v1M17 8a3 3 0 1 0 0-6M18 14a5 5 0 0 1 3 5v1"/></svg><strong>Знижка дітям до 10 років</strong><p>Спеціальні умови для сімейних поїздок.</p></article>
+            <article class="adv-card"><svg class="icon" viewBox="0 0 24 24"><path d="M12 21s-8-4.5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6.5-8 11-8 11Z"/><path d="M8 12h2l1-2 2 4 1-2h2"/></svg><strong>Можна з улюбленцями</strong><p>Приймаємо пасажирів із домашніми тваринами. Умови узгоджуються під час бронювання.</p></article>
+            <article class="adv-card"><svg class="icon" viewBox="0 0 24 24"><path d="m3 7 9-4 9 4-9 4zM3 7v10l9 4 9-4V7M12 11v10M7 5l9 4"/></svg><strong>Передачі та посилки</strong><p>Доставка в обидва боки, у співпраці з Новою поштою.</p></article>
+            <article class="adv-card"><svg class="icon" viewBox="0 0 24 24"><path d="M3 16h18l-2-6H5l-2 6Z"/><path d="M6 10V7h10l3 3M6 16v3M18 16v3M3 19h3m12 0h3"/><circle cx="7" cy="16" r="1"/><circle cx="17" cy="16" r="1"/></svg><strong>Послуги лафети</strong><p>Можливість та умови замовлення уточнюйте у менеджера.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="parcels reveal" id="parcels"><div class="wrap"><div class="parcel-band"><div class="parcel-copy"><div class="parcel-badge">Посилки та передачі</div><h2>Передайте важливе <span class="yellow">близьким</span></h2><p>Приймаємо передачі та посилки між Україною й Європою. Деталі та умови доставки можна уточнити телефоном.</p></div><a class="btn" href="#contacts">Уточнити доставку <span aria-hidden="true">→</span></a></div></div></section>
+
+    <section class="booking reveal" id="booking">
+      <div class="wrap booking-grid">
+        <div class="booking-intro"><div class="eyebrow">Онлайн-заявка</div><h2>Забронюйте поїздку <span class="yellow">у кілька кроків</span></h2><p class="lead">Заповніть коротку форму. Ми підготуємо повідомлення з деталями поїздки, щоб ви могли надіслати його перевізнику у WhatsApp.</p>
+          <div class="steps"><div class="step"><span class="step-no">01</span><div><b>Заповніть форму</b><small>Вкажіть напрямок, дату та контакти.</small></div></div><div class="step"><span class="step-no">02</span><div><b>Надішліть заявку</b><small>Повідомлення відкриється у WhatsApp.</small></div></div><div class="step"><span class="step-no">03</span><div><b>Уточніть деталі</b><small>Менеджер підтвердить можливість поїздки.</small></div></div></div>
+        </div>
+        <form class="form-card" id="bookingForm">
+          <div class="form-head"><h3>Форма бронювання</h3><p>Поля з позначкою * обов’язкові для заповнення.</p></div>
+          <div class="form-grid">
+            <div class="field"><label for="direction">Напрямок *</label><select id="direction" name="direction" required><option value="" selected disabled>Оберіть напрямок</option><option>Україна → Європа</option><option>Європа → Україна</option></select></div>
+            <div class="field"><label for="country">Країна маршруту *</label><select id="country" name="country" required><option value="" selected disabled>Оберіть країну</option><option>Польща</option><option>Німеччина</option><option>Нідерланди</option><option>Бельгія</option></select></div>
+            <div class="field"><label for="date">Бажана дата *</label><input id="date" name="date" type="date" required></div>
+            <div class="field"><label for="passengers">Кількість пасажирів *</label><select id="passengers" name="passengers" required><option value="1">1 пасажир</option><option value="2">2 пасажири</option><option value="3">3 пасажири</option><option value="4">4 пасажири</option><option value="5">5 пасажирів</option><option value="6+">6 або більше</option></select></div>
+            <div class="field"><label for="name">Ваше ім’я *</label><input id="name" name="name" autocomplete="name" placeholder="Як до вас звертатися" required></div>
+            <div class="field"><label for="phone">Номер телефону *</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+380 …" required></div>
+            <div class="field full"><label for="from">Місто / адреса посадки</label><input id="from" name="from" placeholder="Звідки вас забрати"></div>
+            <div class="field full"><label for="to">Місто / адреса прибуття</label><input id="to" name="to" placeholder="Куди потрібно приїхати"></div>
+            <div class="field full"><label for="note">Додаткова інформація</label><textarea id="note" name="note" placeholder="Багаж, домашній улюбленець або інші побажання"></textarea></div>
+          </div>
+          <div class="form-foot"><small>Надсилання заявки не є підтвердженням бронювання. Менеджер уточнить наявність місць та деталі поїздки.</small><button class="btn" type="submit">Надіслати в WhatsApp <span aria-hidden="true">↗</span></button></div>
+          <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="contacts reveal" id="contacts"><div class="wrap contact-grid">
+      <div><div class="eyebrow">Зв’яжіться з нами</div><h2>Є питання? <span class="yellow">Ми на зв’язку.</span></h2><p class="lead">Зателефонуйте або напишіть нам, щоб уточнити маршрут, графік, вартість чи доставку передач.</p></div>
+      <div class="contact-list">
+        <div class="contact-card"><div><b>Роман · Україна</b><small>Viber та WhatsApp</small></div><a class="contact-number" href="tel:+380673363931">+380 (67) 336 39 31</a></div>
+        <div class="contact-card"><div><b>Польща</b><small>Viber</small></div><a class="contact-number" href="tel:+48888690826">+48 888 690 826</a></div>
+        <div class="contact-card"><div><b>Іра · Україна</b><small>Телефон</small></div><a class="contact-number" href="tel:+380681005008">+380 (68) 100 50 08</a></div>
+      </div>
+    </div><div class="wrap footer-bottom"><span>© <span id="year"></span> RomanivBus. Пасажирські перевезення.</span><div class="footer-social"><a href="viber://chat?number=%2B380673363931">Viber</a><a href="https://wa.me/380673363931" target="_blank" rel="noopener">WhatsApp</a><a href="#booking">Бронювання</a></div><span>Концепт сайту · фото демонстраційні до отримання реальних фото</span></div></section>
+  </main>
+  <button class="to-top" id="toTop" aria-label="Повернутися нагору">↑</button>
+  <script>
+    const menuToggle=document.getElementById('menuToggle');
+    const navLinks=document.getElementById('navLinks');
+    menuToggle.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));menuToggle.textContent=open?'×':'☰';});
+    navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.textContent='☰';}));
+    document.getElementById('year').textContent=new Date().getFullYear();
+    // Country cards take visitors straight to booking with the selected destination.
+    document.querySelectorAll('.country[data-country]').forEach(card=>card.addEventListener('click',()=>{
+      const country=document.getElementById('country');
+      country.value=card.dataset.country;
+    }));
+    // Gentle section reveal, disabled automatically for reduced-motion preferences.
+    const revealItems=document.querySelectorAll('.reveal');
+    if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{
+        if(entry.isIntersecting){entry.target.classList.add('is-visible');revealObserver.unobserve(entry.target);}
+      }),{threshold:.08});
+      revealItems.forEach(item=>revealObserver.observe(item));
+    }else{revealItems.forEach(item=>item.classList.add('is-visible'));}
+    const toTop=document.getElementById('toTop');
+    window.addEventListener('scroll',()=>toTop.classList.toggle('show',window.scrollY>650),{passive:true});
+    toTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+    const dateInput=document.getElementById('date');
+    const today=new Date();
+    dateInput.min=new Date(today.getTime()-today.getTimezoneOffset()*60000).toISOString().slice(0,10);
+    document.getElementById('bookingForm').addEventListener('submit',e=>{
+      e.preventDefault();
+      const f=new FormData(e.currentTarget);
+      const lines=[
+        'Заявка на поїздку RomanivBus',
+        `Напрямок: ${f.get('direction')}`,
+        `Країна: ${f.get('country')}`,
+        `Дата: ${f.get('date')}`,
+        `Пасажирів: ${f.get('passengers')}`,
+        `Ім’я: ${f.get('name')}`,
+        `Телефон: ${f.get('phone')}`,
+        `Посадка: ${f.get('from')||'не вказано'}`,
+        `Прибуття: ${f.get('to')||'не вказано'}`,
+        `Коментар: ${f.get('note')||'немає'}`
+      ];
+      const url='https://wa.me/380673363931?text='+encodeURIComponent(lines.join('\n'));
+      document.getElementById('formStatus').textContent='Відкриваємо WhatsApp із заповненою заявкою. Перевірте повідомлення та натисніть «Надіслати».';
+      window.open(url,'_blank','noopener,noreferrer');
+    });
+  </script>
+</body>
+</html>
