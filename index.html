@@ -179,6 +179,10 @@
       *,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}
     }
 
+    .loader-logo-image{display:block;width:min(100%,520px);height:auto;object-fit:contain;opacity:0;transform:translateY(12px) scale(.94);filter:drop-shadow(0 0 18px rgba(245,190,45,.14));animation:loaderLogoImageIn .95s cubic-bezier(.2,.8,.2,1) .12s forwards}
+    @keyframes loaderLogoImageIn{to{opacity:1;transform:translateY(0) scale(1)}}
+    @media(max-width:600px){.loader-logo-image{width:min(100%,440px)}}
+    @media(prefers-reduced-motion:reduce){.loader-logo-image{animation:none!important;opacity:1!important;transform:none!important}}
     /* ROMANIV branded loading screen */
     .brand-loader{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;overflow:hidden;background:radial-gradient(ellipse at 52% 43%,#142a40 0%,#091727 48%,#030b16 100%);opacity:1;visibility:visible;transition:opacity .7s ease,visibility .7s ease}
     .brand-loader.is-hidden{opacity:0;visibility:hidden;pointer-events:none}
@@ -221,33 +225,7 @@
     <div class="brand-loader" id="brandLoader" role="status" aria-live="polite" aria-label="Завантаження Romaniv">
     <div class="loader-light loader-light--top"></div><div class="loader-light loader-light--bottom"></div>
     <div class="loader-inner">
-      <svg class="loader-logo" viewBox="0 0 560 470" role="img" aria-labelledby="loaderLogoTitle">
-        <title id="loaderLogoTitle">ROMANIV — пасажирські перевезення</title>
-        <defs>
-          <linearGradient id="loaderGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff0a8"/><stop offset=".28" stop-color="#ffd64e"/><stop offset=".62" stop-color="#d99408"/><stop offset="1" stop-color="#fff0a0"/></linearGradient>
-          <linearGradient id="loaderGoldText" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff1a8"/><stop offset=".42" stop-color="#f9bd25"/><stop offset="1" stop-color="#bd7600"/></linearGradient>
-          <filter id="loaderGlow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-        </defs>
-        <g class="loader-emblem">
-          <path class="loader-r" d="M180 24h166c62 0 98 34 98 86 0 49-31 82-81 88l74 76h-84l-91-98h84c27 0 43-16 43-42s-16-41-43-41H226l-39 157h-74z" fill="url(#loaderGold)" stroke="#f9c943" stroke-width="2"/>
-          <path class="loader-road-shadow" d="M54 282c68-77 151-100 246-117 58-11 100-31 123-65" fill="none" stroke="#06111f" stroke-width="31" stroke-linecap="round"/>
-          <path class="loader-road" d="M54 282c68-77 151-100 246-117 58-11 100-31 123-65" fill="none" stroke="url(#loaderGold)" stroke-width="19" stroke-linecap="round"/>
-          <path class="loader-road-dashes" d="M85 267c63-61 132-78 218-95 48-10 82-24 104-48" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-dasharray="15 17"/>
-          <g class="loader-van" transform="translate(282 157)">
-            <path d="M0 56 39 13Q49 2 67 2h67q15 0 25 13l34 42 9 47H-2Z" fill="#071321" stroke="url(#loaderGold)" stroke-width="5" stroke-linejoin="round"/>
-            <path d="m52 17-32 39h67V17Z" fill="#172a3d" stroke="#f6c342" stroke-width="3"/>
-            <path d="M95 17v39h91l-30-36q-3-3-11-3Z" fill="#172a3d" stroke="#f6c342" stroke-width="3"/>
-            <path d="M-1 76h204M122 78h64l-4 17h-60Z" fill="#101d2b" stroke="#f6c342" stroke-width="3"/>
-            <path d="M134 85h42" stroke="#f6c342" stroke-width="3" stroke-linecap="round"/>
-            <circle cx="39" cy="111" r="15" fill="#081321" stroke="#f6c342" stroke-width="5"/>
-            <circle cx="165" cy="111" r="15" fill="#081321" stroke="#f6c342" stroke-width="5"/>
-          </g>
-        </g>
-        <text class="loader-wordmark" x="280" y="393" text-anchor="middle">ROMANIV</text>
-        <path d="M62 423h32m372 0h32" stroke="url(#loaderGold)" stroke-width="4" stroke-linecap="round"/>
-        <text class="loader-tagline" x="280" y="431" text-anchor="middle">ПАСАЖИРСЬКІ ПЕРЕВЕЗЕННЯ</text>
-      </svg>
-      <div class="loader-progress" aria-hidden="true"><span></span></div>
+      <img class="loader-logo-image" src="/romaniv-logo-transparent.png" alt="ROMANIV — пасажирські перевезення" width="1036" height="760" fetchpriority="high" decoding="async">     <div class="loader-progress" aria-hidden="true"><span></span></div>
       <p class="loader-caption">Завантаження сайту<span class="loader-ellipsis">...</span></p>
       <div class="loader-route" aria-hidden="true"><span></span><i></i><span></span></div>
     </div>
